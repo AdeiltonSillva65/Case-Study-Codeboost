@@ -5,10 +5,11 @@ import PhoneIcon from '@/assets/icon-phone.svg'
 import SoluctionsIcon from '@/assets/icon-solutions.svg'
 import OptionsIcon from '@/assets/icon-options.svg'
 import CardIcon from '@/assets/icon-card.svg'
+import ImagePhone from '@/assets/phone.png'
 
 const SectionService =()=>{
     return(
-        <section className="w-full h-[965px]">
+        <section className="w-full h-[965px] relative">
             <Container>
                 <div className="flex-1 max-w-[594px] pt-32">
                     <span className="block text-primary-orange text-sm font-bold uppercase mb-9">serviços exclusivos</span>
@@ -42,7 +43,7 @@ const SectionService =()=>{
                             </div>
                             <p className="flex-1 text-txt-gray pr-2">Diversas opções de investimentos, de acordo com o seu perfil de investidor</p>
                         </li>
-                        <li className="flex items-center gap-9 pb-9 border-b-[1px] border-opacity-gray">
+                        <li className="flex items-center gap-9">
                             <div className="w-7 h-7 flex item-center justify-center">
                                 <Image
                                     src={CardIcon}
@@ -54,6 +55,9 @@ const SectionService =()=>{
                     </ul>
                 </div>
             </Container>
+            <div className="absolute top-0 right-0 h-full w-[32%] flex items-center bg-gray-phone">
+                <Image src={ImagePhone} alt="phone" className="translate-x-[-50%]"/>
+            </div>
         </section>
     );
 }
