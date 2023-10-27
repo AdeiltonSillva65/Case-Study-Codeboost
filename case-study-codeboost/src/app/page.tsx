@@ -1,6 +1,8 @@
+import SectionHero from "@/components/SectionHero"
+
 const Page =()=> {
   return (
-    <h1>hello word</h1>
+    <SectionHero/>
   );
 }
 

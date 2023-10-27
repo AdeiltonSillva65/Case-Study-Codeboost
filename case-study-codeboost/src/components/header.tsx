@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Container from "@/components/container";
 
 import ItemMenu from "./ItemMenu";
 import Search from "./Search";
@@ -11,7 +12,7 @@ const Header =()=>{
     return (
         <header className="relative flex items-center w-full h-20 bg-primary-orange">
             <div className="absolute top-0 right-0 bg-primary-blue w-[19%] h-full z-0"></div>
-            <div className=" flex items-center justify-between w-full max-w-[1246px] px-[15px] mx-auto">
+            <Container>
                 <div className="flex flex-1 items-center justify-between">
                     <div className="flex items-center gap-14">
                         <Image
@@ -47,7 +48,7 @@ const Header =()=>{
                     <Image src={IconUser} alt="IconUser"/>
                     <span className="text-white font-bold">Acessar Conta</span>
                 </button>
-            </div>
+            </Container>
         </header>
     )
 }
