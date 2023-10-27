@@ -4,6 +4,7 @@ import Container from "@/components/container";
 import ImgAppleStore from "@/assets/btn-apple-store.svg"
 import ImgGooglePlay from "@/assets/btn-google-play.svg"
 import Arrow from "@/assets/arrow-explorer.svg"
+import WomanImage from "@/assets/woman.png"
 
 
 const SectionHero =()=>{
@@ -32,6 +33,7 @@ const SectionHero =()=>{
                         <span className="text-white text-sm font-bold">Continue explorando</span>
                     </button>
                 </div>
+                <Image src={WomanImage} alt="Woman" className="mr-[-41px]"/>
             </Container>
         </section>
     );
